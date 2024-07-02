@@ -1,0 +1,32 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+/* Dispositivos pequeños */
+@media (min-width: 300px) and (min-width: 700px) {
+    #naav {
+        background-color: rgb(43, 214, 226);
+    }
+
+    #menuInicio {
+        display: none;
+    }
+
+    #menuProducto {
+        display: none;
+    }
+
+}
+
+
+/* dispositivos grandes */
+
+@media (min-width: 700px) {
+    #menuseciones{
+        display: none;
+    }
+    
+    #naav{
+        background-color: rgba(134, 112, 69, 0.356);
+    }
+}

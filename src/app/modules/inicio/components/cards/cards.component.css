@@ -1,0 +1,21 @@
+/*CSS DEL CARROUSEL 
+.carousel-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-inner img {
+    width: 0;
+    max-height: 500px;
+    margin: 0;
+  }
+  */
+
+  .ContenCard{
+  
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+  
+  }
+  
