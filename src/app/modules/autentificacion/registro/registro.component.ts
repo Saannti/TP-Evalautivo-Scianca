@@ -1,15 +1,15 @@
-/*
+
 
 import { Component } from '@angular/core';
+
+
 import { Usuario } from 'src/app/models/usuario';
 // servicio firestore
 import { FirestoreService } from 'src/app/modules/shared/services/firestore.service';
 // importamos servicio de autentificacion
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../services/auth.service';
 // importamos componente de rutas de angular
 import { Router } from '@angular/router'
-
-
 
 
 @Component({
@@ -18,6 +18,7 @@ import { Router } from '@angular/router'
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
+
   //input de la contraseña para los caracteres o no 
   hide = true;
 
@@ -49,43 +50,41 @@ export class RegistroComponent {
         console.log('error =>', error)
       })
   }
-}
 
-async registrar() {
-  const credenciales = {
-    email: this.usuarios.email,
-    password: this.usuarios.password
 
+  async registrar() {
+    const credenciales = {
+      email: this.usuarios.email,
+      password: this.usuarios.password
+
+    }
+
+    const res = await this.servicioAuth.registrar(credenciales.email, credenciales.password)
+      //el metodo THEN es una promesa que devuelove el mismo valor si todo sale bien
+
+      .then(res => {
+        alert("se registro exittosamente")
+
+
+        // el metodo NAIVIGATE nos redirecciona a otra vista 
+
+        this.servicioRutas.navigate(['/inicio'])
+      })
+    this.limpiarInputs()
   }
-
-  const res = await this.servicioAuth.registrar(credenciales.email, credenciales.password)
-    //el metodo THEN es una promesa que devuelove el mismo valor si todo sale bien
-
-    .then(res => {
-      alert("se registro exittosamente")
+  limpiarInputs() {
+    const inputs = {
 
 
-      // el metodo NAIVIGATE nos redirecciona a otra vista 
-
-      this.servicioRutas.navigate(['/inicio'])
-    })
-  this.limpiarInputs()
-}
-limpiarInputs() {
-  const inputs = {
-    //
+      uid: this.usuarios.uid = '',
+      nombre: this.usuarios.nombre = '',
+      apellido: this.usuarios.apellido = '',
+      email: this.usuarios.email = '',
+      rol: this.usuarios.rol = '',
+      password: this.usuarios.password = ''
 
 
-    uid: this.usuarios.uid = '',
-    nombre: this.usuarios.nombre = '',
-    apellido: this.usuarios.apellido = '',
-    email: this.usuarios.email = '',
-    rol: this.usuarios.rol = '',
-    password: this.usuarios.password = ''
-
-
+    }
+    alert("Registrado corerectamente")
   }
-  alert("Registrado corerectamente")
 }
-
-*/

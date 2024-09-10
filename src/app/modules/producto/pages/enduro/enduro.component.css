@@ -1,0 +1,46 @@
+* Efectos de Hover para las Tarjetas */
+.card {
+  transition: transform 0.3s;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(73, 22, 190, 0.952);
+  transition: 0.3s;
+  margin: 8%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(226, 9, 9);
+}
+
+/* Ajustes para Imágenes y Texto */
+.container {
+  max-width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+/* Fondo de la página */
+body {
+  background: linear-gradient(135deg, rgba(238, 0, 153, 0.8), rgba(0, 102, 255, 0.8));
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 20px;
+}

@@ -5,6 +5,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+
 
 
 @NgModule({
@@ -16,11 +18,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     CommonModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    AppRoutingModule
   ],
   exports:[
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule { }

@@ -1,32 +1,34 @@
 import { Component } from '@angular/core';
 import { Usuario } from 'src/app/models/usuario';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../services/auth.service';
 import { FirestoreService } from 'src/app/modules/shared/services/firestore.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-inicio-sesion',
-  templateUrl: './inicio-sesion.component.html',
-  styleUrls: ['./inicio-sesion.component.css']
+  selector: 'app-inicio-secion',
+  templateUrl: './inicio-secion.component.html',
+  styleUrls: ['./inicio-secion.component.css']
 })
 export class InicioSesionComponent {
-hide=true;
+
+
+  hide = true;
   constructor(
-    public serviceAuht: AuthService,
+    public serviceAuth : AuthService,
     public FirestoreService: FirestoreService,
     public servicioRutas: Router
 
-  ) {}
+  ) { }
 
 
-usuarios: Usuario = {
+  usuarios: Usuario = {
     uid: '',
     nombre: ' ',
     apellido: '',
     email: ' ',
     rol: '',
-    password:''
-    
+    password: ''
+
   }
 
   async comparador() {
@@ -38,7 +40,7 @@ usuarios: Usuario = {
     }
 
 
-    const res = await this.serviceAuht.IniciarSesion(credencailess.email, credencailess.password)
+    const res = await this.serviceAuth.iniciarSesion(credencailess.email, credencailess.password)
 
       .then(res => {
         alert('se pudo iniciar secion');
