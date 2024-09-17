@@ -1,5 +1,7 @@
 
   /* Estilo para centrar el carrusel y agregar sombreado */
+
+
   .carousel-container {
     display: flex;
     justify-content: center;
@@ -11,7 +13,7 @@
   .carousel-inner {
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 7px #ff6347;
   }
   
   .carousel-inner img {
@@ -34,5 +36,29 @@
     background-color: rgba(255, 255, 255, 0.9);
   }
   
+
+  /* CSS para la Descripción entre el Carrusel y los Grids */
+.description-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f96b;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.description-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.description-container p {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
   
   

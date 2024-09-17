@@ -1,10 +1,15 @@
-* Efectos de Hover para las Tarjetas */
+/* Efectos de Hover para las Tarjetas */
 .example-card {
   transition: transform 0.3s;
 }
 
 .example-card:hover {
   transform: scale(1.05);
+}
+
+.card-body{
+  background-color: #7c7573;
+  opacity: 90%;
 }
 
 .mat-card {
@@ -15,6 +20,7 @@
 .mat-card:hover {
   box-shadow: 0 8px 16px 0 rgb(226, 9, 9);
 }
+
 
 /* Ajustes para Imágenes y Texto */
 .container {
