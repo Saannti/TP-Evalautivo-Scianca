@@ -15,6 +15,7 @@
     flex-wrap: wrap;
 }
 
+
 .footer-section {
     flex: 1;
     padding: 20px;
@@ -60,3 +61,9 @@
     width: 40%;
 }
 
+
+.textoF{
+    box-shadow: #792011;
+   color: #ff6347;
+    
+}

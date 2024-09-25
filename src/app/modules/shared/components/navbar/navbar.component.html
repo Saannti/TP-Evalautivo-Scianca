@@ -1,20 +1,21 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<nav class="navbar navbar-expand-lg ">
 
-    <div id="naav" class="container-fluid">
+    <div id="naav" class="container-fluid navbar">
 
-
-
-    
-
-         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" href="#">
-            <mat-icon>Menu</mat-icon>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+            [matMenuTriggerFor]="seccion">
+            <mat-icon>menu</mat-icon>
         </button>
-        
+        <mat-menu #seccion="matMenu">
+            <button mat-menu-item routerLink="inicio">Inicio</button>
+            <button mat-menu-item [matMenuTriggerFor]="producto">Productos</button>
+        </mat-menu>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <mat-menu #producto="matMenu">
+            <button mat-menu-item routerLink="/cross-country">Cross-Country</button>
+            <button mat-menu-item routerLink="/enduro">Enduro</button>
+            <button mat-menu-item routerLink="/gravel">Gravel</button>
+        </mat-menu>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -22,22 +23,29 @@
 
 
                 <li class="nav-item">
-                    <button class="nav-link active" aria-current="page" routerLink="Inicio" href="inicio">Inicio</button>
+                    <button class="nav-link active" aria-current="page" routerLink="/inicio" href=""> <b class="b">Inicio </b></button>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Productos</a>
-                </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="sobre nosotros">Contactanos</a>
+                    <button class="nav-link active" aria-current="page" routerLink="/contacto" href=""> <b class="b">Contacto </b></button>
                 </li>
 
             </ul>
 
+            <!-- Menú desplegable para manejar todo el acceso de los usuarios en la página -->
+            <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+            <mat-menu #usuario="matMenu">
+                <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
+                <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar
+                    Sesión</button>
+                <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
+            </mat-menu>
+
+
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><mat-icon class="material-symbols-outlined">
+                <input class="form-control me-2 loguito" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline buscar" type="submit"><mat-icon class="material-symbols-outlined">
                         search
                     </mat-icon></button>
             </form>

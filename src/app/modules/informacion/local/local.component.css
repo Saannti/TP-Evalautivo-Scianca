@@ -1,0 +1,53 @@
+.nuevo-local {
+    background-color: #f4f4f4; /* Fondo claro para diferenciarlo */
+    color: #333; /* Texto oscuro para buen contraste */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 1000px; /* Ancho máximo */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nuevo-local h2 {
+    font-size: 32px;
+    color: #ff6b35;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nuevo-local p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.galeria-imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para que sea responsive */
+}
+
+.imagen-container {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.imagen-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.imagen-container:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}

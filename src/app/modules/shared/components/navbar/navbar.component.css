@@ -1,3 +1,5 @@
+
+
 .example-spacer {
     flex: 1 1 auto;
 }
@@ -5,7 +7,7 @@
 /* Dispositivos pequeños */
 @media (min-width: 300px) and (min-width: 700px) {
     #naav {
-        background-color: rgb(43, 214, 226);
+        background-color: #7a1f0d;
     }
 
     #menuInicio {
@@ -19,27 +21,46 @@
 }
 
 .logo-img {
-    width: 40px; 
-    height: 40px; 
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    box-shadow: 0px 0px 10px #ff6347; /* Añade sombras negras alrededor */
-  }
-  
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Hace que la imagen sea circular */
+    box-shadow: 0px 0px 10px #ff6347;
+    /* Añade sombras negras alrededor */
+}
+
 
 
 /* dispositivos grandes */
 
 
 @media (min-width: 700px) {
-    #menuseciones{
+    #menuseciones {
         display: none;
     }
-    
 
+    .body {
+        background-color: black;
+    }
 
     /*color nav*/
-    #naav{
+    #naav {
         background-color: #7a1f0d;
         color: aliceblue;
+    }
+
+    .nav {
+        background-color: rgb(223, 219, 219);
+    }
+
+    .buscar {
+        color: rgb(227, 243, 243);
+    }
+
+    .loguito {
+        color: black;
+    }
+    .b{
+        color: beige;
     }
 }

@@ -42,12 +42,12 @@ informacion=[
   {
     img: "https://biciclub.com/wp-content/uploads/2023/11/0BP-NDT-_IPA8495-.jpg",
     pe: "Nuevo local",
-    ruta: "/informacion"
+    ruta: "/local"
   },
   {
     img: "https://biciclub.com/wp-content/uploads/2023/11/BP-NDT-_IPA8847-.jpg",
     pe: "Sobre Nosotros",
-    ruta: "/local"
+    ruta: "/informacion"
   },
 ]
 
