@@ -1,0 +1,70 @@
+/* Estilo general para el formulario */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #574a4ae6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #titulo {
+    text-align: center;
+    font-size: 2.5em;
+    color: #f5703f; /* Color armonizado con el esquema general */
+    margin-bottom: 20px;
+  }
+  
+  #icono {
+    text-align: center;
+    font-size: 4em;
+    color: #0c0c0c6b ; /* Otro tono de la paleta utilizada */
+    margin-bottom: 20px;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de los inputs del formulario */
+  input[matInput] {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  select[matNativeControl] {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Estilo para el botón */
+  .boton {
+    width: 100%;
+    background-color: #4A90E2; /* Color del botón en armonía */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .boton:hover {
+    background-color: #002C71; /* Efecto de hover con un tono más oscuro */
+  }
+  
+  /* Estilos adicionales para iconos y tips */
+  .mat-icon-button {
+    width: 100%;
+    color: #E300B4; /* Color para los iconos */
+    justify-content: center;
+  }
+  
+  .mat-hint {
+    color: #4A90E2; /* Color para las sugerencias */
+  }
+  

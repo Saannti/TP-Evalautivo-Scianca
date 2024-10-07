@@ -1,6 +1,6 @@
 .nuevo-local {
-    background-color: #f4f4f4; /* Fondo claro para diferenciarlo */
-    color: #333; /* Texto oscuro para buen contraste */
+    background-color: #2c2c2c; /* Fondo claro para diferenciarlo */
+    color: #e2dede; /* Texto oscuro para buen contraste */
     padding: 40px;
     border-radius: 8px;
     margin: 30px auto;
@@ -45,7 +45,7 @@
 .imagen-container p {
     margin-top: 10px;
     font-size: 16px;
-    color: #666;
+    color: #e2d1d1;
 }
 
 .imagen-container:hover {

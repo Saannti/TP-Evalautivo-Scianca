@@ -1,25 +1,11 @@
 <div class="container">
     <div class="row">
-        <h1>Registrate!</h1>
+        <h1 id="titulo">¡Registrate!</h1>
 
-        <i class="material-icons">account_circle</i>
+        <div id="icono">
+            <i class="material-icons" style="font-size: 200px;">account_circle</i>
+        </div>
 
-
-        <mat-form-field appearance="fill">
-            <mat-label>Nombre de usuario</mat-label>
-
-            <input [(ngModel)]="usuarios.nombre" matInput placeholder="Ej: santisx">
-
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-            <mat-label>Ingrese su apellido</mat-label>
-            <input [(ngModel)]="usuarios.apellido" matInput placeholder="Ej: Scianca">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-
-        </mat-form-field>
 
         <mat-form-field appearance="fill">
             <mat-label>Ingrese su Correo</mat-label>
@@ -29,15 +15,7 @@
         </mat-form-field>
 
 
-        <!--rol de usuario-->
 
-        <mat-form-field>
-            <mat-label>Rol de usuario</mat-label>
-            <select [(ngModel)]="usuarios.rol" matNativeControl required>
-                <option value="admin">Administrador</option>
-                <option value="vist">Visitante</option>
-            </select>
-        </mat-form-field>
 
 
         <div class="example-container">

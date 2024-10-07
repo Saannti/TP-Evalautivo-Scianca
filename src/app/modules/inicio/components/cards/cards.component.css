@@ -51,7 +51,7 @@ p {
 
 /* estilo para la info adicional */
 .transicion {
-  background-color: #ffffff;
+  background-color: #ca26266b;
   padding: 60px 20px;
   margin: 40px auto;
   max-width: 900px;
@@ -62,14 +62,14 @@ p {
 
 .transicion h2 {
   font-size: 28px;
-  color: #ff6b35;
+  color: #f5703f;
   margin-bottom: 20px;
 }
 
 .transicion p {
   font-size: 18px;
   line-height: 1.7;
-  color: #555;
+  color: #e6dcdc;
   margin-bottom: 20px;
 }
 

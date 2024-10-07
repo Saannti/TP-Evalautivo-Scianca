@@ -41,7 +41,7 @@
 .description-container {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f9f9f96b;
+  background-color: #ca26266b;
   border-radius: 15px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -50,12 +50,12 @@
 .description-container h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #333;
+  color: #f5703f;
 }
 
 .description-container p {
   font-size: 1.2em;
-  color: #666;
+  color: #f0e9e9;
   max-width: 800px;
   margin: 0 auto;
 }
